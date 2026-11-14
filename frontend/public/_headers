@@ -1,0 +1,5 @@
+# Cache headers for Netlify / Cloudflare Pages (ignored by GitHub Pages).
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+/data/*
+  Cache-Control: public, max-age=86400

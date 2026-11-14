@@ -1,0 +1,401 @@
+{
+  "generated": "2026-11-13T22:27:48",
+  "machine": {
+    "python": "3.11.5",
+    "numpy": "2.4.6",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "processor": "Intel64 Family 6 Model 142 Stepping 9, GenuineIntel"
+  },
+  "dataset": "cipic",
+  "subject": "165",
+  "fs": 44100.0,
+  "note": "Python reference implementations; browser real-time timings are measured in the browser.",
+  "offline": [
+    {
+      "signal_length": 128,
+      "filter_length": 200,
+      "method": "direct",
+      "time_ms": 0.020899809896945953,
+      "max_rel_error": 0.0,
+      "error_db": -6000.0,
+      "peak_memory_kb": 3.8359375,
+      "output_length_ok": true
+    },
+    {
+      "signal_length": 128,
+      "filter_length": 200,
+      "method": "fft",
+      "time_ms": 0.07279962301254272,
+      "max_rel_error": 3.8120665944590755e-16,
+      "error_db": -308.3767904221985,
+      "peak_memory_kb": 12.390625,
+      "output_length_ok": true
+    },
+    {
+      "signal_length": 128,
+      "filter_length": 200,
+      "method": "overlap_add",
+      "time_ms": 0.1338999718427658,
+      "max_rel_error": 2.287239956675445e-16,
+      "error_db": -312.8137654145256,
+      "peak_memory_kb": 68.625,
+      "output_length_ok": true
+    },
+    {
+      "signal_length": 128,
+      "filter_length": 200,
+      "method": "overlap_save",
+      "time_ms": 0.13289973139762878,
+      "max_rel_error": 2.287239956675445e-16,
+      "error_db": -312.8137654145256,
+      "peak_memory_kb": 25.5703125,
+      "output_length_ok": true
+    },
+    {
+      "signal_length": 128,
+      "filter_length": 200,
+      "method": "partitioned_128",
+      "time_ms": 0.27399975806474686,
+      "max_rel_error": 3.0496532755672606e-16,
+      "error_db": -310.3149906823596,
+      "peak_memory_kb": 31.5,
+      "output_length_ok": true
+    },
+    {
+      "signal_length": 1024,
+      "filter_length": 200,
+      "method": "direct",
+      "time_ms": 0.08410029113292694,
+      "max_rel_error": 0.0,
+      "error_db": -6000.0,
+      "peak_memory_kb": 11.3984375,
+      "output_length_ok": true
+    },
+    {
+      "signal_length": 1024,
+      "filter_length": 200,
+      "method": "fft",
+      "time_ms": 0.12090057134628296,
+      "max_rel_error": 2.6788411390927666e-16,
+      "error_db": -311.4410608040662,
+      "peak_memory_kb": 48.390625,
+      "output_length_ok": true
+    },
+    {
+      "signal_length": 1024,
+      "filter_length": 200,
+      "method": "overlap_add",
+      "time_ms": 0.13250019401311874,
+      "max_rel_error": 2.6788411390927666e-16,
+      "error_db": -311.4410608040662,
+      "peak_memory_kb": 75.625,
+      "output_length_ok": true
+    },
+    {
+      "signal_length": 1024,
+      "filter_length": 200,
+      "method": "overlap_save",
+      "time_ms": 0.21740049123764038,
+      "max_rel_error": 3.21460936691132e-16,
+      "error_db": -309.8574358831137,
+      "peak_memory_kb": 37.4609375,
+      "output_length_ok": true
+    },
+    {
+      "signal_length": 1024,
+      "filter_length": 200,
+      "method": "partitioned_128",
+      "time_ms": 0.9209997951984406,
+      "max_rel_error": 3.21460936691132e-16,
+      "error_db": -309.8574358831137,
+      "peak_memory_kb": 45.609375,
+      "output_length_ok": true
+    },
+    {
+      "signal_length": 8192,
+      "filter_length": 200,
+      "method": "direct",
+      "time_ms": 0.589100643992424,
+      "max_rel_error": 0.0,
+      "error_db": -6000.0,
+      "peak_memory_kb": 67.3984375,
+      "output_length_ok": true
+    },
+    {
+      "signal_length": 8192,
+      "filter_length": 200,
+      "method": "fft",
+      "time_ms": 0.7786992937326431,
+      "max_rel_error": 4.377922984457561e-16,
+      "error_db": -307.1746376544449,
+      "peak_memory_kb": 384.390625,
+      "output_length_ok": true
+    },
+    {
+      "signal_length": 8192,
+      "filter_length": 200,
+      "method": "overlap_add",
+      "time_ms": 0.7421998307108879,
+      "max_rel_error": 4.864358871619512e-16,
+      "error_db": -306.2594878432314,
+      "peak_memory_kb": 131.7109375,
+      "output_length_ok": true
+    },
+    {
+      "signal_length": 8192,
+      "filter_length": 200,
+      "method": "overlap_save",
+      "time_ms": 1.464799977838993,
+      "max_rel_error": 4.377922984457561e-16,
+      "error_db": -307.1746376544449,
+      "peak_memory_kb": 149.703125,
+      "output_length_ok": true
+    },
+    {
+      "signal_length": 8192,
+      "filter_length": 200,
+      "method": "partitioned_128",
+      "time_ms": 5.956700071692467,
+      "max_rel_error": 4.864358871619512e-16,
+      "error_db": -306.2594878432314,
+      "peak_memory_kb": 160.2109375,
+      "output_length_ok": true
+    },
+    {
+      "signal_length": 44100,
+      "filter_length": 200,
+      "method": "direct",
+      "time_ms": 3.1081000342965126,
+      "max_rel_error": 0.0,
+      "error_db": -6000.0,
+      "peak_memory_kb": 347.9296875,
+      "output_length_ok": true
+    },
+    {
+      "signal_length": 44100,
+      "filter_length": 200,
+      "method": "fft",
+      "time_ms": 3.3581992611289024,
+      "max_rel_error": 5.604307609312185e-16,
+      "error_db": -305.02956070341236,
+      "peak_memory_kb": 1536.390625,
+      "output_length_ok": true
+    },
+    {
+      "signal_length": 44100,
+      "filter_length": 200,
+      "method": "overlap_add",
+      "time_ms": 4.1541000828146935,
+      "max_rel_error": 4.670256341093488e-16,
+      "error_db": -306.61318562436486,
+      "peak_memory_kb": 412.2421875,
+      "output_length_ok": true
+    },
+    {
+      "signal_length": 44100,
+      "filter_length": 200,
+      "method": "overlap_save",
+      "time_ms": 8.227400481700897,
+      "max_rel_error": 5.604307609312185e-16,
+      "error_db": -305.02956070341236,
+      "peak_memory_kb": 711.4453125,
+      "output_length_ok": true
+    },
+    {
+      "signal_length": 44100,
+      "filter_length": 200,
+      "method": "partitioned_128",
+      "time_ms": 31.333699822425842,
+      "max_rel_error": 3.7362050728747905e-16,
+      "error_db": -308.551385884526,
+      "peak_memory_kb": 719.3203125,
+      "output_length_ok": true
+    },
+    {
+      "signal_length": 441000,
+      "filter_length": 200,
+      "method": "direct",
+      "time_ms": 33.72329939156771,
+      "max_rel_error": 0.0,
+      "error_db": -6000.0,
+      "peak_memory_kb": 3448.7109375,
+      "output_length_ok": true
+    },
+    {
+      "signal_length": 441000,
+      "filter_length": 200,
+      "method": "fft",
+      "time_ms": 61.85860000550747,
+      "max_rel_error": 7.04345658424827e-16,
+      "error_db": -303.04428316075655,
+      "peak_memory_kb": 12288.390625,
+      "output_length_ok": true
+    },
+    {
+      "signal_length": 441000,
+      "filter_length": 200,
+      "method": "overlap_add",
+      "time_ms": 42.45049972087145,
+      "max_rel_error": 5.282592438186202e-16,
+      "error_db": -305.54305789292255,
+      "peak_memory_kb": 3513.0234375,
+      "output_length_ok": true
+    },
+    {
+      "signal_length": 441000,
+      "filter_length": 200,
+      "method": "overlap_save",
+      "time_ms": 70.29430009424686,
+      "max_rel_error": 5.282592438186202e-16,
+      "error_db": -305.54305789292255,
+      "peak_memory_kb": 6912.91015625,
+      "output_length_ok": true
+    },
+    {
+      "signal_length": 441000,
+      "filter_length": 200,
+      "method": "partitioned_128",
+      "time_ms": 304.2807001620531,
+      "max_rel_error": 4.402160365155169e-16,
+      "error_db": -307.12668281387505,
+      "peak_memory_kb": 6919.3203125,
+      "output_length_ok": true
+    },
+    {
+      "signal_length": 44100,
+      "filter_length": 256,
+      "method": "direct",
+      "time_ms": 4.650900140404701,
+      "max_rel_error": 0.0,
+      "error_db": -6000.0,
+      "peak_memory_kb": 348.8046875,
+      "output_length_ok": true
+    },
+    {
+      "signal_length": 44100,
+      "filter_length": 256,
+      "method": "fft",
+      "time_ms": 6.9853998720645905,
+      "max_rel_error": 3.969717889929463e-16,
+      "error_db": -308.024807110079,
+      "peak_memory_kb": 1536.390625,
+      "output_length_ok": true
+    },
+    {
+      "signal_length": 44100,
+      "filter_length": 256,
+      "method": "overlap_add",
+      "time_ms": 6.76529947668314,
+      "max_rel_error": 4.670256341093486e-16,
+      "error_db": -306.61318562436486,
+      "peak_memory_kb": 412.6796875,
+      "output_length_ok": true
+    },
+    {
+      "signal_length": 44100,
+      "filter_length": 256,
+      "method": "overlap_save",
+      "time_ms": 12.82269973307848,
+      "max_rel_error": 4.0864742984568004e-16,
+      "error_db": -307.7730245639186,
+      "peak_memory_kb": 712.0,
+      "output_length_ok": true
+    },
+    {
+      "signal_length": 44100,
+      "filter_length": 256,
+      "method": "partitioned_128",
+      "time_ms": 43.5266001150012,
+      "max_rel_error": 3.035666621710766e-16,
+      "error_db": -310.35491849150776,
+      "peak_memory_kb": 719.3203125,
+      "output_length_ok": true
+    }
+  ],
+  "blocks": [
+    {
+      "block_size": 64,
+      "filter_length": 256,
+      "method": "direct",
+      "us_per_block_two_ears": 34.20524997636676,
+      "deadline_us": 1451.2471655328798,
+      "load_percent": 2.356955506184022
+    },
+    {
+      "block_size": 64,
+      "filter_length": 256,
+      "method": "partitioned",
+      "us_per_block_two_ears": 169.99300103634596,
+      "deadline_us": 1451.2471655328798,
+      "load_percent": 11.713580227660714
+    },
+    {
+      "block_size": 128,
+      "filter_length": 256,
+      "method": "direct",
+      "us_per_block_two_ears": 40.35975085571408,
+      "deadline_us": 2902.4943310657595,
+      "load_percent": 1.3905195412007743
+    },
+    {
+      "block_size": 128,
+      "filter_length": 256,
+      "method": "partitioned",
+      "us_per_block_two_ears": 206.0297504067421,
+      "deadline_us": 2902.4943310657595,
+      "load_percent": 7.098368744482286
+    },
+    {
+      "block_size": 256,
+      "filter_length": 256,
+      "method": "direct",
+      "us_per_block_two_ears": 49.266249407082796,
+      "deadline_us": 5804.988662131519,
+      "load_percent": 0.8486881245516997
+    },
+    {
+      "block_size": 256,
+      "filter_length": 256,
+      "method": "partitioned",
+      "us_per_block_two_ears": 129.7622499987483,
+      "deadline_us": 5804.988662131519,
+      "load_percent": 2.2353575097440626
+    },
+    {
+      "block_size": 512,
+      "filter_length": 512,
+      "method": "direct",
+      "us_per_block_two_ears": 167.2869990579784,
+      "deadline_us": 11609.977324263038,
+      "load_percent": 1.440889972354853
+    },
+    {
+      "block_size": 512,
+      "filter_length": 512,
+      "method": "partitioned",
+      "us_per_block_two_ears": 206.14525070413947,
+      "deadline_us": 11609.977324263038,
+      "load_percent": 1.7755870226665138
+    }
+  ],
+  "engine": [
+    {
+      "method": "direct",
+      "blocks": 690,
+      "filter_updates": 690,
+      "crossfades": 689,
+      "us_per_block": 2001.5214488882089,
+      "deadline_us": 2902.4943310657595,
+      "realtime_factor": 1.4481737011850402
+    },
+    {
+      "method": "partitioned",
+      "blocks": 690,
+      "filter_updates": 690,
+      "crossfades": 689,
+      "us_per_block": 1775.1062315875204,
+      "deadline_us": 2902.4943310657595,
+      "realtime_factor": 1.632888597346333
+    }
+  ]
+}

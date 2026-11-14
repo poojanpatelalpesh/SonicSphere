@@ -1,0 +1,8 @@
+CIPIC HRTF Database - subject 165
+V. R. Algazi, R. O. Duda, D. M. Thompson and C. Avendano, "The CIPIC HRTF Database," Proc. IEEE WASPAA, New Paltz, NY, 2001, pp. 99-102.
+
+The filter files in filters/ are derived from the CIPIC HRTF Database.
+Copyright notice and licence (from the original files):
+This is a copy of the original license: The Regents of the University of California hereby grant users permission to reproduce and/or use materials available therein for any purpose- educational, research or commercial. However, each reproduction of any part of the materials must include the copyright notice, if it is present. In addition, as a courtesy, if these materials are used in published research, this use should be acknowledged in the publication. If these materials are used in the development of commercial products, the Regents of the University of California request that written acknowledgment of such use be sent to: CIPIC- Center for Image Processing and Integrated Computing University of California 1 Shields Avenue Davis, CA 95616-8553
+
+Built-in sounds: see sounds.json for the source and licence of each file.

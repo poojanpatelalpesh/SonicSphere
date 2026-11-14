@@ -1,0 +1,21 @@
+# Python
+backend/.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+backend/cache/
+backend/sonicsphere.toml
+# Datasets are downloaded by `python -m sonicsphere.download_dataset` (not redistributed here)
+backend/data/
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/src/test/golden/
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+# Windows-TTS voice clip: not cleared for public redistribution. Regenerate locally with
+# `python -m sonicsphere.generate_sounds`, or publish your own recording with --voice-file.
+assets/sounds/come_here.wav

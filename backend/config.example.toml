@@ -1,0 +1,64 @@
+# SonicSphere backend configuration.
+# Copy to `sonicsphere.toml` (same directory) or point SONICSPHERE_CONFIG at your own file.
+# Relative paths are resolved against the directory containing this file.
+
+[server]
+host = "127.0.0.1"
+port = 8000
+cors_origins = ["http://localhost:5173", "http://127.0.0.1:5173"]
+
+[paths]
+cache_dir = "cache"
+results_dir = "results"
+sounds_dir = "../assets/sounds"
+
+[upload]
+max_bytes = 26214400          # 25 MiB
+max_duration_s = 60.0
+min_duration_s = 0.01
+
+[rendering]
+block_size = 128              # samples per processing block (= Web Audio render quantum)
+align_margin = 40             # samples kept before the aligned onset (holds slow contralateral onsets)
+onset_threshold_db = -20.0    # onset (TOA) threshold relative to the per-ear peak
+onset_upsample = 8            # upsampling factor for sub-sample onset estimation
+interpolation = "barycentric_aligned"   # chosen from results/interpolation_eval.json
+gap_edge_threshold_deg = 30.0 # hull triangles with a longer edge are treated as unmeasured gaps
+measured_snap_deg = 0.1       # directions this close to a measurement use it verbatim
+direction_quantum_deg = 0.5   # filter grid; below the ~1° human resolution, 5x fewer filter rebuilds than 0.1°
+target_rms_db = -20.0         # source normalisation target
+peak_ceiling_db = -1.0        # source normalisation peak ceiling
+limiter_threshold = 0.98      # output peak limiter threshold (linear)
+limiter_release_ms = 80.0
+stereo_pair_width_deg = 30.0  # default spread for the "stereo pair" upload policy
+
+[dataset]
+default = "cipic"
+
+[datasets.cipic]
+name = "CIPIC HRTF Database"
+format = "sofa"
+directory = "data/cipic"
+file_pattern = "subject_{subject}.sofa"
+default_subject = "165"
+download_base_url = "https://sofacoustics.org/data/database/cipic/"
+homepage = "https://www.ece.ucdavis.edu/cipic/spatial-sound/hrtf-data/"
+reference = "V. R. Algazi, R. O. Duda, D. M. Thompson and C. Avendano, \"The CIPIC HRTF Database,\" Proc. IEEE WASPAA, New Paltz, NY, 2001, pp. 99-102."
+license_summary = "Free for any purpose (educational, research or commercial). Reproductions must include the UC Regents copyright notice; acknowledge use in publications."
+subjects = ["003","008","009","010","011","012","015","017","018","019","020","021","027","028","033","040","044","048","050","051","058","059","060","061","065","119","124","126","127","131","133","134","135","137","147","148","152","153","154","155","156","158","162","163","165"]
+default_download = ["003","008","021","040","048","165"]
+subject_notes = { "021" = "KEMAR mannequin, large pinnae", "165" = "KEMAR mannequin, small pinnae" }
+
+[datasets.mit_kemar]
+name = "MIT KEMAR HRTF (Gardner & Martin)"
+format = "sofa"
+directory = "data/mit_kemar"
+file_pattern = "mit_kemar_{subject}.sofa"
+default_subject = "normal_pinna"
+download_base_url = "https://sofacoustics.org/data/database/mit/"
+homepage = "https://sound.media.mit.edu/resources/KEMAR.html"
+reference = "W. G. Gardner and K. D. Martin, \"HRTF measurements of a KEMAR,\" J. Acoust. Soc. Am. 97(6), 1995."
+license_summary = "Freely available; see the SOFA file's License attribute and the MIT Media Lab page for terms."
+subjects = ["normal_pinna", "large_pinna"]
+default_download = []
+subject_notes = { "normal_pinna" = "KEMAR, normal pinna", "large_pinna" = "KEMAR, large pinna" }
